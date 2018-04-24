@@ -1,0 +1,63 @@
+body {
+    background: wheat;
+}
+
+.container {
+    margin-top: 200px;
+    background: wheat;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Animation proprement dite */
+
+@keyframes poop-dance {
+    from,
+    49% {
+        transform-origin: -50% 100%;
+    }
+    50%,
+    75%,
+    to {
+        transform-origin: 150% 100%;
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+
+/* Réglage la fréquence de dance */
+
+.danse {
+    animation: poop-dance 1s infinite alternate ease-in-out;
+}
+
+#idThom,
+#idGreg {
+    display: none;
+    color: brown;
+}
+
+
+/* ease-in-out	
+The animation has both a slow start and a slow end */
+
+
+/* transform-origin 
+permet de modifier l'origine du 
+repère pour les opérations de transformation d'un élément. */
+
+
+/* alternate
+La lecture de l'animation se fait de façon alternée et change de sens
+ à chaque cycle en commençant par le sens normal. */
