@@ -35,14 +35,14 @@ class Person
 
   public function identifier()
   {
-     echo $this->firstname." a les yeux ".$this->eyes.". Ses cheveux sont ".$this->hair.".";
+     echo $this->firstname." a les yeux ".$this->eyes.". Ses cheveux sont ".$this->hair.". Son nom de famille est ".$this->lastname.". Il a ".$this->age." ans.";
   }
 
 }
 // Création de 2 objets avec une identité propre (Instanciation)
 
-$Gregoire = new Person('Gregoire', 'Risol', 33, "verts", "châtains");
-$Thomas = new Person('Thomas', 'Dupond', 37, "bleus", "blonds");
+$Romeo = new Person('Roméo', 'Frigo', 33, "verts", "châtains");
+$Thomas = new Person('Thomas', 'Hauck', 37, "bleus", "blonds");
 
 
 ?>
@@ -68,7 +68,7 @@ $Thomas = new Person('Thomas', 'Dupond', 37, "bleus", "blonds");
 <g id="Layer_1">
 	<path stroke="#CF9E76" d="m10.775 269.78s-30.281-195.42 119.01-217.25 165.49 123.94 173.24 161.27c7.746 37.323-21.127 30.985 7.746 59.858 28.873 28.874-14.788 53.522-20.422 76.762 3.815 0.458 13.828 8.417-0.165 13.487 3.438 20.623 20.208 43.229 10.728 52.709-11.62 11.62-133.8 51.409-199.3-62.676s-90.835-84.16-90.835-84.16z" fill="#F0D0B4"/>
 	<path id="cheveux" stroke="#C7B29D" d="m33.188 321.71s-20.883 0.443-21.767-1.988 3.204-3.868 3.204-3.868l-3.867-2.872 2.21-3.204-2.762-4.089 3.535-3.535-7.182-7.072 2.983-5.745s-22.507-130.64 3.493-184.14 5.5-61.5 5.5-61.5l33 12s28.978-18.392 26.75-26.75c12.709 5.724 8.75 21.75 8.75 21.75s56.206-38.833 49.5-48.5c12.337 9.376 30.5 47 30.5 47s49.75-36.986 45-48c15.092 8.828-5 48.5-5 48.5s57.597-34.951 52.5-47.5c17.2 7.294-0.5 46-0.5 46s67.382-19.654 65-33.5c15.86 16.879-34.089 62.866-34.089 62.866s32.775-1.18 40.669-10.887c-0.854 33.82-48.58 68.728-48.58 68.728s-19.913 22.792-58.5 22.792c-77 0-94.5-31.5-117-9s-17 84-17 84-42.5 69.5-42.5 87-13.852 1.51-13.852 1.51z"/> 
-	<!-- cheveux s -->
+	<!-- cheveux -->
 	<path stroke="#D6C2AD" d="m212.93 158s17.186-60.376 10.678-73.604c14.935 12.802-0.074 73.81-0.074 73.81s-10.14 0.26-10.61-0.21z" fill="#FFC64E"/>
 	<path stroke="#D6C2AD" d="m232.04 157.82s25.067-27.024 19.733-44.947c11.629 15.576-5.083 42.392-5.083 42.392s-10.06 2.56-14.65 2.56z" fill="#FFC64E"/>
 	<path stroke="#D6C2AD" d="m175.9 153.62s-13.101-42.454-4.993-64.965c-19.736 13.868-7.012 62.188-7.012 62.188s4.94 2.24 12 2.78z" fill="#FFC64E"/>
@@ -148,18 +148,18 @@ $Thomas = new Person('Thomas', 'Dupond', 37, "bleus", "blonds");
 
 	<div class="row justify-content-around mb-5">
 <button id="thomas"  type="button" class="btn btn-primary">Thomas</button>
-<button id="gregoire" type="button" class="btn btn-primary">Gregoire</button>
+<button id="romeo" type="button" class="btn btn-primary">Roméo</button>
 </div>
 
 <!-- Appel de la méthode "identifier" des objets nouvellement créés -->
 
   <div id="idThom"><?= $Thomas->identifier();?></div>
-  <div id="idGreg"><?= $Gregoire->identifier();?></div>
+  <div id="idRom"><?= $Romeo->identifier();?></div>
 
 <!-- Appel de la méthode "danser" des objets nouvellement créés -->
 
   <!-- <div><?= $Thomas->danser(); ?></div>
-  <div><?= $Gregoire->danser(); ?></div> -->
+  <div><?= $Romeo->danser(); ?></div> -->
 
   </div>
 

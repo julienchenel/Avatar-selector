@@ -7,13 +7,13 @@ $(document).ready(function() {
 
         $("#cheveux").attr("fill", "#FFDC8F");
 
-        $("#idGreg").hide();
+        $("#idRom").hide();
         $("#idThom").show();
 
 
     })
 
-    $("#gregoire").click(function() {
+    $("#romeo").click(function() {
 
         $("#XMLID_10_").html("<stop stop-color='#0F9225' offset='0'/><stop stop-color='#0F9225' offset='1'/>");
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
         $("#cheveux").attr("fill", "#8D6304");
 
         $("#idThom").hide();
-        $("#idGreg").show();
+        $("#idRom").show();
     })
 
 
